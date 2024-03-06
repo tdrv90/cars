@@ -7,7 +7,7 @@ This Python project provides a versatile CarAnalyzer class to analyze car data l
 - **Data Loading**: Loads car data from JSON files.
 - **Unique Car Count**: Calculates the number of distinct cars in the dataset.
 - **Average Horsepower**: Computes the average horsepower of all cars.
-- **Top 5 Heaviest Cars**: Identifies the top 5 heaviest cars based on the "weight" colum.
+- **Top 5 Heaviest Cars**: Identifies the top 5 heaviest cars based on the "weight" column.
 - **Car Count by Manufacturer**: Counts the number of cars manufactured by each brand.
 - **Car Count per Year**: Counts the number of cars manufactured each year.
 - **CSV Export**: Saves the loaded car data to a CSV file for further analysis.
@@ -38,9 +38,9 @@ To install this package, run the following command in your terminal:
 
 `get_unique_car_count()`: Returns the number of unique cars.
 
-`get_average_horsepower()`: Returns the average horsepower (if the column exists).
+`get_average_horsepower()`: Returns the average horsepower.
 
-`get_top_five_heaviest_cars()`: Returns a DataFrame of the top 5 heaviest cars (if the column exists).
+`get_top_five_heaviest_cars()`: Returns a DataFrame of the top 5 heaviest cars.
 
 `get_cars_count_by_manifacturer()`: Returns a Series count of cars by manufacturer.
 
