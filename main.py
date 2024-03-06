@@ -34,9 +34,13 @@ class CarAnalyzer:
 
 
     def get_top_five_heaviest_cars(self):
-        # TODO:    Print the top 5 most heaviest cars.
-        return
+        if self.data is None:
+            raise RuntimeError("Data is not loaded. Please call load_data_from_json() first.")
 
+        try:
+            return print(f"Top 5 heaviest cars:\n {self.data.nlargest(5, "weight")}")
+        except KeyError:
+            raise KeyError('Weight column not found in dataset')
 
     def get_cars_count_by_manifacturer(self):
         # TODO:     Print the number of cars made by each manufacturer.
@@ -58,3 +62,4 @@ analyzer = CarAnalyzer()
 analyzer.load_data_from_json("D:\\dev\\cars\\cars.json")
 analyzer.get_unique_car_count()
 analyzer.get_avegage_horsepower()
+analyzer.get_top_five_heaviest_cars()
