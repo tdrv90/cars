@@ -43,18 +43,23 @@ class CarAnalyzer:
             raise KeyError('Weight column not found in dataset')
 
     def get_cars_count_by_manifacturer(self):
-        # TODO:     Print the number of cars made by each manufacturer.
-        return
+        if self.data is None:
+            raise RuntimeError("Data is not loaded. Please call load_data_from_json() first.")
+         
+        return print(f"Cars count by manifacturer:\n {self.data["make"].value_counts()}")
 
     
     def get_cars_count_per_year(self):
-        # TODO:     Print the number of cars made each year.
-        return
+        if self.data is None:
+            raise RuntimeError("Data is not loaded. Please call load_data_from_json() first.")
+         
+        return print(f"Cars count per year:\n {self.data["year"].value_counts()}")
 
-
-    def save_data_to_csv(self):
-        # TODO:     Save the dataset to a CSV file.
-        return
+    def save_data_to_csv(self, output_file='cars.csv'):
+        if self.data is None:
+            raise RuntimeError("Data is not loaded. Please call load_data_from_json() first.")
+        
+        return self.data.to_csv(output_file, sep=",", index=False, encoding="utf-8")
 
 
 
@@ -63,3 +68,6 @@ analyzer.load_data_from_json("D:\\dev\\cars\\cars.json")
 analyzer.get_unique_car_count()
 analyzer.get_avegage_horsepower()
 analyzer.get_top_five_heaviest_cars()
+analyzer.get_cars_count_by_manifacturer()
+analyzer.get_cars_count_per_year()
+analyzer.save_data_to_csv('cars1.csv')
