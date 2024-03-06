@@ -52,4 +52,5 @@ To install this package, run the following command in your terminal:
 ## Dependencies
 
 This project requires the following Python libraries:
+
 pandas
