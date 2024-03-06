@@ -1,0 +1,44 @@
+[
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "weight": 1650,
+      "year": 2024,
+      "horsepower": 203
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "weight": 1600,
+      "year": 2020,
+      "horsepower": 192
+    },
+    {
+      "make": "Tesla",
+      "model": "Model S",
+      "weight": 2000,
+      "year": 2023,
+      "horsepower": 600
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "weight": 1900,
+      "year": 2022,
+      "horsepower": 480
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta",
+      "weight": 1200,
+      "year": 2019,
+      "horsepower": 90
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "weight": 1450,
+      "year": 2019,
+      "horsepower": 150
+    }
+  ]
