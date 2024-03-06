@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: carsanalyzer
+Version: 0.1.0
+Summary: a package that analyzes cars dataset
+Home-page: https://github.com/tdrv90/cars
+Author: Alexander Todorov
+Author-email: al.todorov@outlook.com
+License: MIT
+Classifier: License :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+
+# cars
