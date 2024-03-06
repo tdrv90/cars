@@ -8,3 +8,5 @@ app/carsanalyzer.egg-info/requires.txt
 app/carsanalyzer.egg-info/top_level.txt
 app/src/__init__.py
 app/src/carsanalyzer.py
+app/test/__init__.py
+app/test/test_caranalyzer.py
