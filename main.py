@@ -19,8 +19,10 @@ class CarAnalyzer:
         self.data = pd.DataFrame(loaded_json)
 
     def get_unique_car_count(self):
-        # TODO:     Print the number of unique cars in the dataset.
-        return
+        if self.data is None:
+            raise RuntimeError("Data is not loaded. Please call load_data_from_json() first.")
+        df_without_duplicates = self.data.drop_duplicates()
+        return print(len(df_without_duplicates))
 
     def get_avegage_horsepower(self):
         # TODO:     Print the average horse power of all the cars.
@@ -49,5 +51,5 @@ class CarAnalyzer:
 
 
 analyzer = CarAnalyzer()
-
 analyzer.load_data_from_json("D:\\dev\\cars\\cars.json")
+analyzer.get_unique_car_count()
